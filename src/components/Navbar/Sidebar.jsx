@@ -13,61 +13,57 @@ const Sidebar = () => {
 
 
     return (
-        <aside className="h-full w-96 mr-10  bg-[#101540] text-white ">
-            <div className="flex justify-start items-center bg-[#588145] p-4">
-                <div className="mr-4">
+        <aside className="h-[100vh] w-[22%] mr-10  bg-[#101540] text-white">
+            <div className="flex justify-center items-center bg-[#012c03]">
+                <div>
                     <Image
                         src="/icon.png"
-                        width={150}
-                        height={150}
+                        width={120}
+                        height={120}
                         alt="Picture of the author"
                     />
                 </div>
-                <h1 className="text-2xl">Electro Next</h1>
+                <h1 className="text-xl hidden md:block font-bold">ElectroNext</h1>
             </div>
-            <ul className="mt-5 mb-5 ms-10 h-full bg-[#101540]">
+            <ul className="mt-4 mx-auto bg-[#101540] text-xs md:text-lg">
 
-                <li className="text-2xl flex font-bold mt-10 mb-10 hover:text-blue-500" >
-                    <TbHomePlus className='text-4xl mr-5' />
+                <li className=" flex font-bold mt-4 hover:text-blue-500" >
+                    <TbHomePlus className='text-xl mx-4' />
                     <Link href="/">Dashboard</Link>
                 </li>
 
 
-                <li className="text-2xl flex font-bold mt-10 mb-10 hover:text-blue-500" >
-                    <FaUserAlt className='text-4xl mr-5' />
+                <li className="flex font-bold mt-4 hover:text-blue-500" >
+                    <FaUserAlt className='text-xl mx-4' />
                     <Link href="/manage-users">Manage Users</Link>
                 </li>
 
 
-                <li className="text-2xl flex font-bold mt-10 mb-10 hover:text-blue-500" >
-                    <BiSolidCategoryAlt className='text-4xl mr-5' />
+                <li className="flex font-bold mt-4 hover:text-blue-500" >
+                    <BiSolidCategoryAlt className='text-xl mx-4' />
                     <Link href="/category">Category</Link>
                 </li>
 
 
-                <li className="text-2xl flex font-bold mt-10 mb-10 hover:text-blue-500" >
-                    <AiOutlineIdcard className='text-4xl mr-5' />
+                <li className="flex font-bold mt-4 hover:text-blue-500" >
+                    <AiOutlineIdcard className='text-xl mx-4' />
                     <Link href="/products">Products</Link>
                 </li>
 
 
-                <li className="text-2xl flex font-bold mt-10 mb-10 hover:text-blue-500" >
-                    <BsBank className='text-4xl mr-5' />
+                <li className="flex font-bold mt-4 hover:text-blue-500" >
+                    <BsBank className='text-xl mx-4' />
                     <Link href="/sales">Sales</Link>
                 </li>
 
 
-                <li className="text-2xl flex font-bold mt-10 mb-10 hover:text-blue-500" >
-                    <GoReport className='text-4xl mr-5' />
+                <li className="flex font-bold mt-4 hover:text-blue-500" >
+                    <GoReport className='text-xl mx-4' />
                     <Link href="/report">Report</Link>
                 </li>
 
-
-
-
-
-                <li className="text-2xl flex font-bold mt-24 mb-10 hover:text-blue-500" >
-                    <TbHomePlus className='text-4xl mr-5' />
+                <li className="flex font-bold hover:text-blue-500 absolute bottom-0 mb-6" >
+                    <TbHomePlus className='text-xl mx-4' />
                     <Link href="/products">log Out</Link>
                 </li>
 
