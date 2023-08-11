@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 import { TbHomePlus } from 'react-icons/tb';
 import { FaUserAlt } from 'react-icons/fa';
-import { BiSolidCategoryAlt } from 'react-icons/bi';
+import { BiLogOut, BiSolidCategoryAlt } from 'react-icons/bi';
 import { AiOutlineIdcard } from 'react-icons/ai';
 import { BsBank } from 'react-icons/bs';
 import { GoReport } from 'react-icons/go';
@@ -13,7 +13,7 @@ const Sidebar = () => {
 
 
     return (
-        <aside className="h-[100vh] w-[22%] mr-10  bg-[#101540] text-white">
+        <aside className="h-[100vh] w-[25%] bg-[#101540] text-white fixed">
             <div className="flex justify-center items-center bg-[#012c03]">
                 <div>
                     <Image
@@ -25,7 +25,7 @@ const Sidebar = () => {
                 </div>
                 <h1 className="text-xl hidden md:block font-bold">ElectroNext</h1>
             </div>
-            <ul className="mt-4 mx-auto bg-[#101540] text-xs md:text-lg">
+            <ul className="mt-4 mx-auto md:ml-6 bg-[#101540] text-xs md:text-lg">
 
                 <li className=" flex font-bold mt-4 hover:text-blue-500" >
                     <TbHomePlus className='text-xl mx-4' />
@@ -62,8 +62,8 @@ const Sidebar = () => {
                     <Link href="/report">Report</Link>
                 </li>
 
-                <li className="flex font-bold hover:text-blue-500 absolute bottom-0 mb-6" >
-                    <TbHomePlus className='text-xl mx-4' />
+                <li className="flex items-center font-bold hover:text-blue-500 absolute bottom-0 mb-6" >
+                    <BiLogOut className='text-xl mx-4' />
                     <Link href="/products">log Out</Link>
                 </li>
 
